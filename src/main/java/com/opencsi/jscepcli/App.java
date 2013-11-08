@@ -284,6 +284,7 @@ public class App {
 
             app.scepCLI();
         } catch (ParameterException e) {
+            System.err.println(e.getLocalizedMessage());
             jcmd.usage();
         }
     }
